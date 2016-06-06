@@ -1,0 +1,9 @@
+* TODO Easy
+- [X] Global Shortcuts (kglobalshortcutsrc)
+- [X] Custom hotkeys (khotkeysrc)
+- [ ] kwin scripts (enabled?, sync folder)
+- [X] +dolphin (dolphinrc, not the state)+
+- [X] globals (KDE->singleclick...)
+- [X] File Associations (sync .local/share/applications/mimeapps.lst)
+* TODO Difficult
+- [ ] Desktop layout (panels)
