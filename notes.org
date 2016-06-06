@@ -5,5 +5,8 @@
 - [X] +dolphin (dolphinrc, not the state)+
 - [X] globals (KDE->singleclick...)
 - [X] File Associations (sync .local/share/applications/mimeapps.lst)
+- [ ] autostart dolphin (sync .config/autostart/dolphin.desktop
 * TODO Difficult
 - [ ] Desktop layout (panels)
+- [ ] kwinrules (sync kwinrulesrc)
+  Difficult, as activities are identified by uuids
