@@ -10,12 +10,14 @@
   (and
    (not (has-extension? file-name #"rkt"))
    (not (has-extension? file-name #"org"))
+   (not (member (string->path-element ".git") (explode-path file-name)))
    (not (string-contains? (path->string file-name) "#"))
    (not (string-contains? (path->string file-name) "~"))
    ))
 
 ;; Returns a list of copy actions from kde-config to config-dest
 ;;   copy action: (or/c (cons 'mkdir . destination) (cons src . destination))
+;;   TODO: this is useful in other scripts too. Put it into the shell.rkt library
 (define (copy-actions kde-config config-dest)
   (for/list ([f (in-directory kde-config)] #:when (config-file? f))
             (let-values ([(base name must-be-dir?) (split-path f)])
