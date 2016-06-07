@@ -4,12 +4,11 @@
 
 ;; utils
 (define (config-file? file-name)
-  (define/contract (has-extension? file-name ext)
-    ((or/c path-string? path-for-some-system?) bytes? . -> . boolean?)
-    (equal? (filename-extension file-name) ext))
+  (define (has-extension? file-name . exts)
+    (for/or ([ext exts])
+    (equal? (filename-extension file-name) ext)))
   (and
-   (not (has-extension? file-name #"rkt"))
-   (not (has-extension? file-name #"org"))
+   (not (has-extension? file-name #"rkt" #"org" #"md"))
    (not (member (string->path-element ".git") (explode-path file-name)))
    (not (string-contains? (path->string file-name) "#"))
    (not (string-contains? (path->string file-name) "~"))
@@ -17,7 +16,7 @@
 
 ;; Returns a list of copy actions from kde-config to config-dest
 ;;   copy action: (or/c (cons 'mkdir . destination) (cons src . destination))
-;;   TODO: this is useful in other scripts too. Put it into the shell.rkt library
+;;   TODO: this is us eful in other scripts too. Put it into the shell.rkt library
 (define (copy-actions kde-config config-dest)
   (for/list ([f (in-directory kde-config)] #:when (config-file? f))
             (let-values ([(base name must-be-dir?) (split-path f)])
