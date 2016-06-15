@@ -50,7 +50,7 @@ _k_friendly_name=KDE Daemon
 
 [klipper]
 _k_friendly_name=klipper
-clear-history=none,none,Clear Clipboard History
+clear-history=Meta+Shift+H,none,Clear Clipboard History
 clipboard_action=,none,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
 cyclePrevAction=none,none,Previous History Item
