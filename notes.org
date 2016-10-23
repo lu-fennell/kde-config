@@ -1,11 +1,24 @@
-* TODO Easy
+* TODO Easy [6/12]
 - [X] Global Shortcuts (kglobalshortcutsrc)
+  Line format: 
+  #+BEGIN_EXAMPLE
+  <id> = <Key>,<Key>,<human readable name>
+  manage activities=Meta+A,Meta+A,Activities...
+  #+END_EXAMPLE
+  For some reason it is required to disable write access to
+  kglobalshortcutsrc... otherwise kde overwrites it (sometime?) on
+  startup.
 - [X] Custom hotkeys (khotkeysrc)
 - [ ] kwin scripts (enabled?, sync folder)
 - [X] +dolphin (dolphinrc, not the state)+
 - [X] globals (KDE->singleclick...)
 - [X] File Associations (sync .local/share/applications/mimeapps.lst)
-- [ ] autostart dolphin (sync .config/autostart/dolphin.desktop
+- [ ] autostart dolphin (sync .config/autostart/dolphin.desktop)
+- [ ] Unbind Alt-F1 
+- [ ] Unbind all Alts
+- [ ] Enable "delete" for dolphin
+- [X] Use Meta-A for activity switcher, as Meta-Q is reserved in VBox
+- [ ] Enable Klipper
 * TODO Difficult
 - [ ] Desktop layout (panels)
 - [ ] kwinrules (sync kwinrulesrc)
