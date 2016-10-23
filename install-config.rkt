@@ -33,7 +33,21 @@
 (define (copy action)
   (match action
     [(cons 'mkdir dest) (unless (directory-exists? dest) (make-directory dest))]
-    [(cons src dest) (copy-file src dest #t)]))
+    [(cons src dest)
+     ;; we need to set/unset write to r-- to keep kde from overwriting the file
+     (let ([orig-perms (file-or-directory-permissions dest 'bits)])
+       ;; enable write perms
+       (when (file-exists? dest)
+	 (file-or-directory-permissions
+	  dest
+	  (bitwise-ior orig-perms user-write-bit)))
+       ;; copy file
+       (copy-file src dest #t)
+       ;; disable write perms
+       (file-or-directory-permissions
+	dest
+	(bitwise-and orig-perms (bitwise-not user-write-bit))))
+     ]))
 
 ;; parameters
 (define kde-config (make-parameter (build-path home "dev/kde-config")))
