@@ -126,6 +126,10 @@ DisabledSemiTransparent=true
 DisabledValue=1
 Size=32
 
+[DirSelect Dialog]
+DirSelectDialog Size=640,480
+History Items[$e]=file:$HOME/Audio Books & Podcasts/Christopher Paolini - Eragon,file:$HOME/Music,file:$HOME/Audio Books & Podcasts
+
 [General]
 BrowserApplication[$e]=!/run/current-system/sw/bin/firefox
 ColorScheme=Breeze
@@ -140,12 +144,30 @@ smallestReadableFont=Arimo,9,-1,5,50,0,0,0,0,0
 toolBarFont=Arimo,9,-1,5,50,0,0,0,0,0
 
 [KDE]
-SingleClick=false
 LookAndFeelPackage=org.kde.breeze.desktop
 ShowDeleteCommand=true
+SingleClick=false
 contrast=4
 widgetStyle=breeze
 
+[KFileDialog Settings]
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=0
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Previews=false
+Show Bookmarks=false
+Show Full Path=false
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+Speedbar Width=173
+View Style=Simple
+listViewIconSize=0
 
 [MainToolbarIcons]
 ActiveColor=169,156,255
@@ -184,6 +206,9 @@ DisabledEffect=togray
 DisabledSemiTransparent=true
 DisabledValue=1
 Size=32
+
+[PreviewSettings]
+MaximumRemoteSize=0
 
 [SmallIcons]
 ActiveColor=169,156,255

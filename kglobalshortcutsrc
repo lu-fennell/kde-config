@@ -1,4 +1,6 @@
 [KDE Keyboard Layout Switcher]
+Switch keyboard layout to English (international AltGr dead keys)=none,none,Switch keyboard layout to English (international AltGr dead keys)
+Switch keyboard layout to German=none,none,Switch keyboard layout to German
 Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=KDE Daemon
 
@@ -27,8 +29,14 @@ stop_after_current=Meta+Shift+V,Meta+Shift+V,Stop after current Track
 toggleMainWindow=none,none,Toggle Main Window
 
 [kaccess]
-Toggle Screen Reader On and Off=none,none,Toggle Screen Reader On and Off
+Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=kaccess
+
+[kcm_touchpad]
+Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
+Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
+Toggle Touchpad=Touchpad Toggle,Touchpad Toggle,Toggle Touchpad
+_k_friendly_name=KDE Daemon
 
 [kded5]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -37,35 +45,49 @@ Hibernate=Hibernate,Hibernate,Hibernate
 Increase Keyboard Brightness=Keyboard Brightness Up,Keyboard Brightness Up,Increase Keyboard Brightness
 Increase Screen Brightness=Monitor Brightness Up,Monitor Brightness Up,Increase Screen Brightness
 PowerOff=Power Off,Power Off,Power Off
-Show System Activity=none,none,Show System Activity
+Show System Activity=none,Ctrl+Esc,Show System Activity
 Sleep=Sleep,Sleep,Suspend
 Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Toggle Keyboard Backlight
-_k_friendly_name=KDE Daemon
-display=Display,Display,Switch Display
+_k_friendly_name=Power Management
+display=Display,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=KDE Daemon
+{44166a7a-393f-47ce-aa66-d521904d8288}=Print,none,Start Screenshot Tool
+{46696de4-b488-41b7-96db-8f5e46a311b5}=Shift+Print,none,Take Full Screen Screenshot
+{939d347a-d70e-4f19-9293-4dce3287d497}=Meta+Print,none,Take Active Window Screenshot
 {c1654b09-e7e2-4799-bee7-6caf902a9da4}=Meta+Return,none,New Action
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
+{d06a3983-1a4a-46f2-bb40-a4e90bbb9e22}=Meta+Shift+Print,none,Take Rectangular Region Screenshot
 
 [klipper]
-_k_friendly_name=klipper
+_k_friendly_name=Klipper
 clear-history=Meta+Shift+H,none,Clear Clipboard History
-clipboard_action=,none,Enable Clipboard Actions
+clipboard_action=,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
 cyclePrevAction=none,none,Previous History Item
 edit_clipboard=none,none,Edit Contents...
-repeat_action=,none,Manually Invoke Action on Current Clipboard
+repeat_action=,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
+show-barcode=none,none,Show Barcode...
 show-on-mouse-pos=Meta+H,none,Open Klipper at Mouse Position
 
+[kmix]
+_k_friendly_name=Audio Volume
+decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decrease Microphone Volume
+decrease_volume=Volume Down,Volume Down,Decrease Volume
+increase_microphone_volume=Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume
+increase_volume=Volume Up,Volume Up,Increase Volume
+mic_mute=Microphone Mute,Microphone Mute,Mute Microphone
+mute=Volume Mute,Volume Mute,Mute
+
 [krunner]
-_k_friendly_name=krunner
-run command=Meta+P\t\tSearch,none,Run Command
-run command on clipboard contents=none,none,Run Command on clipboard contents
+_k_friendly_name=Run Command
+run command=Meta+P\t\tSearch,Alt+Space,Run Command
+run command on clipboard contents=none,Alt+Shift+F2,Run Command on clipboard contents
 
 [ksmserver]
 Halt Without Confirmation=none,none,Halt Without Confirmation
-Lock Session=Meta+Pause\tScreensaver,none,Lock Session
+Lock Session=Meta+Pause\tScreensaver,Ctrl+Alt+L\tScreensaver,Lock Session
 Log Out=Meta+Del,none,Log Out
 Log Out Without Confirmation=none,none,Log Out Without Confirmation
 Reboot Without Confirmation=none,none,Reboot Without Confirmation
@@ -74,7 +96,7 @@ _k_friendly_name=ksmserver
 [kwin]
 Activate Window Demanding Attention=none,Ctrl+Alt+A,Activate Window Demanding Attention
 Decrease Opacity=none,none,Decrease Opacity of Active Window by 5 %
-Expose=Meta+F9,none,Toggle Present Windows (Current desktop)
+Expose=Meta+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Meta+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
 ExposeClass=Meta+F7,Ctrl+F7,Toggle Present Windows (Window class)
 FlipSwitchAll=none,none,Toggle Flip Switch (All desktops)
@@ -84,10 +106,10 @@ Invert Screen Colors=none,none,Invert Screen Colors
 Kill Window=Ctrl+Alt+Esc,Ctrl+Alt+Esc,Kill Window
 MoveMouseToCenter=,Meta+F6,Move Mouse to Center
 MoveMouseToFocus=,Meta+F5,Move Mouse to Focus
-MoveZoomDown=Meta+Down,Meta+Down,Move Zoomed Area Downwards
+MoveZoomDown=,Meta+Down,Move Zoomed Area Downwards
 MoveZoomLeft=,Meta+Left,Move Zoomed Area to Left
 MoveZoomRight=,Meta+Right,Move Zoomed Area to Right
-MoveZoomUp=Meta+Up,Meta+Up,Move Zoomed Area Upwards
+MoveZoomUp=,Meta+Up,Move Zoomed Area Upwards
 Quaker=,none,Quake-style app expose for dolphin
 Remove Window From Group=none,none,Remove Window From Group
 Setup Window Shortcut=none,none,Setup Window Shortcut
@@ -136,10 +158,10 @@ Switch to Screen 6=none,none,Switch to Screen 6
 Switch to Screen 7=none,none,Switch to Screen 7
 Toggle Window Raise/Lower=none,none,Toggle Window Raise/Lower
 ToggleDolphin=Meta+F2,none,Toggle Dolphin
-Walk Through Desktop List=none,none,Walk Through Desktop List
-Walk Through Desktop List (Reverse)=none,none,Walk Through Desktop List (Reverse)
-Walk Through Desktops=none,none,Walk Through Desktops
-Walk Through Desktops (Reverse)=none,none,Walk Through Desktops (Reverse)
+Walk Through Desktop List=Meta+Up,none,Walk Through Desktop List
+Walk Through Desktop List (Reverse)=Meta+Down,none,Walk Through Desktop List (Reverse)
+Walk Through Desktops=Meta+Right,none,Walk Through Desktops
+Walk Through Desktops (Reverse)=Meta+Left,none,Walk Through Desktops (Reverse)
 Walk Through Window Tabs=none,none,Walk Through Window Tabs
 Walk Through Window Tabs (Reverse)=none,none,Walk Through Window Tabs (Reverse)
 Walk Through Windows=Meta+Tab,none,Walk Through Windows
@@ -224,7 +246,7 @@ view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
-_k_friendly_name=mediacontrol
+_k_friendly_name=Media Controller
 nextmedia=,Media Next,Media playback next
 playpausemedia=,Media Play,Play/Pause media playback
 previousmedia=,Media Previous,Media playback previous
@@ -233,15 +255,17 @@ stopmedia=,Media Stop,Stop media playback
 [plasmashell]
 _k_friendly_name=Plasma
 activate widget 2=Alt+F1,none,Activate Application Launcher Widget
+activate widget 6=Meta+C,none,Activate Digital Clock Widget
 clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=Ctrl+Alt+N,none,Next History Item
 cyclePrevAction=none,none,Previous History Item
 edit_clipboard=none,none,Edit Contents...
-manage activities=Meta+A,Meta+A,Activities...
-next activity=Meta+Right,none,Walk through activities
-previous activity=Meta+Left,none,Walk through activities (Reverse)
+manage activities=Meta+A,Meta+Q,Activities...
+next activity=,none,Walk through activities
+previous activity=,none,Walk through activities (Reverse)
 repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
 show dashboard=Meta+F12,Ctrl+F12,Show Desktop
+show-barcode=none,none,Show Barcode...
 show-on-mouse-pos=Ctrl+Alt+H,none,Open Klipper at Mouse Position
 stop current activity=Meta+S,Meta+S,Stop Current Activity
