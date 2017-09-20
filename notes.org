@@ -1,3 +1,6 @@
+* TODO Keep synchronized
+- [ ] Check what kde writes to the files (start w/ kglobalshortcuts)
+- [ ] Check official overlay solution again
 * TODO Easy [6/12]
 - [X] Global Shortcuts (kglobalshortcutsrc)
   Line format: 
@@ -18,6 +21,8 @@
 - [ ] Unbind all Alts
 - [ ] Enable "delete" for dolphin
 - [X] Use Meta-A for activity switcher, as Meta-Q is reserved in VBox
+- [ ] Ctrl as Capslock keyboard (xkb) option
+- [ ] Touchpad settings (per laptop, perhaps?)
 - [ ] Enable Klipper
 * TODO Difficult
 - [ ] Desktop layout (panels)

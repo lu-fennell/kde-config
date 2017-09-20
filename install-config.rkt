@@ -44,7 +44,7 @@
        ;; copy file
        (copy-file src dest #t)
        ;; disable write perms
-       (file-or-directory-permissions
+       #;(file-or-directory-permissions
 	dest
 	(bitwise-and orig-perms (bitwise-not user-write-bit))))
      ]))
