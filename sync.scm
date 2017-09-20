@@ -1,4 +1,5 @@
-(use-modules (ice-9 match))
+(use-modules (ice-9 match)
+             (ice-9 popen))
 
 ;; Configuration
 (define files-to-sync
@@ -17,6 +18,12 @@
 ;; Utilities
 (define (exit-status-ok? n) (equal? n 0))
 
+(define (repo-currently-clean?)
+  (define p (open-input-pipe "git status --porcelain"))
+  (define some-output (read p))
+  (close-pipe p)
+  (eof-object? some-output)
+  )
 
 ;; Implementation
 
@@ -32,12 +39,20 @@
 (define (different-files)
   (define (call-diff left-file right-file)
     (with-output-to-file "/dev/null"
-      (lambda () (system* "diff" "--brief" left-file right-file))))
+      (lambda ()
+        (close-pipe
+         (open-pipe* OPEN_READ "diff" "--brief" left-file right-file)))))
   (filter
    (match-lambda
     ((repo-file config-file) (not (exit-status-ok?
                               (call-diff repo-file config-file)))))
    comparisons))
 
-(define (sync-config-files)
-  )
+(define (sync-config->repo)
+  (when (not (repo-currently-clean?))
+        (error "Repo is not clean. Aborting."))
+  (for-each
+   (match-lambda
+    ((repo-file config-file)
+     (system* "cp" "-v" config-file repo-file)))
+   (different-files)))
