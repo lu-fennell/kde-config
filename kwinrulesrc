@@ -1,0 +1,24 @@
+[1]
+Description=Open Thunderbird on Desktop "Mail"
+clientmachine=t450-neon
+clientmachinematch=0
+desktop=4
+desktoprule=3
+title=Inbox - fennell@informatik.uni-freiburg.de - Mozilla Thunderbird
+titlematch=0
+wmclass=thunderbird
+wmclasscomplete=false
+wmclassmatch=1
+
+[2]
+Description=Show "Dolphin Scratchpad" on all Desktops
+desktop=-1
+desktoprule=2
+title=fennell — Dolphin
+titlematch=0
+wmclass=dolphin-scratchpad dolphin
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=2

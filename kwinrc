@@ -1,0 +1,145 @@
+[Compositing]
+AnimationSpeed=3
+Backend=OpenGL
+Enabled=true
+GLColorCorrection=false
+GLCore=true
+GLPlatformInterface=glx
+GLPreferBufferSwap=a
+GLTextureFilter=2
+HiddenPreviews=5
+OpenGLIsUnsafe=false
+WindowsBlockCompositing=true
+XRenderSmoothScale=false
+
+[Desktops]
+Name_1=Default
+Name_10=Proglang Org
+Name_2=Jgs
+Name_3=System
+Name_4=Mail
+Name_5=Java
+Name_6=Dev
+Name_7=FB
+Name_8=Info III
+Name_9=RS3
+Number=10
+Rows=1
+
+[Effect-Zoom]
+InitialZoom=1
+
+[MouseBindings]
+CommandActiveTitlebar1=Raise
+CommandActiveTitlebar2=Start window tab drag
+CommandActiveTitlebar3=Operations menu
+CommandAll1=Move
+CommandAll2=Toggle raise and lower
+CommandAll3=Resize
+CommandAllKey=Alt
+CommandAllWheel=Nothing
+CommandInactiveTitlebar1=Activate and raise
+CommandInactiveTitlebar2=Start window tab drag
+CommandInactiveTitlebar3=Operations menu
+CommandTitlebarWheel=Switch to Window Tab to the Left/Right
+CommandWindow1=Activate, raise and pass click
+CommandWindow2=Activate and pass click
+CommandWindow3=Activate and pass click
+CommandWindowWheel=Scroll
+
+[Plugins]
+Dolphin-ScratchpadEnabled=true
+ShimmerEnabled=false
+cubeslideEnabled=false
+desktopchangeosdEnabled=false
+enforcedecoEnabled=true
+kwin4_effect_fadedesktopEnabled=false
+minimizeallEnabled=false
+slideEnabled=true
+synchronizeskipswitcherEnabled=false
+videowallEnabled=false
+windowgeometryEnabled=false
+
+[Script-desktopchangeosd]
+PopupHideDelay=1000
+TextOnly=false
+
+[SubSession: 038fe822-68a9-4ea2-8279-07648463adf4]
+active=-1
+count=0
+
+[SubSession: 1b8f664e-1aea-4945-998e-b4699c56e71b]
+active=-1
+count=0
+
+[SubSession: 24639818-c0ee-4cf0-b702-4aa194e16bd0]
+active=-1
+count=0
+
+[SubSession: 597e8198-f9d9-41e5-83f4-972ec2636db2]
+active=-1
+count=0
+
+[SubSession: 9b7c12e8-844b-475f-a985-14b1d5eaaf4f]
+active=-1
+count=0
+
+[SubSession: cae72468-3022-4434-a1a4-55c0cc53bd35]
+active=-1
+count=0
+
+[SubSession: d881a304-e1b0-4824-8bb7-c01ec2179ccf]
+active=-1
+count=0
+
+[SubSession: e8c3e58b-444a-467a-be48-13937875e787]
+active=-1
+count=0
+
+[SubSession: eb77cd21-4831-4dfa-81e9-6b25bfc23c05]
+active=-1
+count=0
+
+[SubSession: fd1dfe04-aefa-4f18-9ff3-9f2de9ac45e3]
+active=-1
+count=0
+
+[TabBox]
+DesktopLayout=org.kde.breeze.desktop
+DesktopListLayout=org.kde.breeze.desktop
+LayoutName=org.kde.breeze.desktop
+
+[Windows]
+ActiveMouseScreen=false
+AutoRaise=false
+AutoRaiseInterval=750
+AutogroupInForeground=true
+AutogroupSimilarWindows=false
+BorderSnapZone=0
+CenterSnapZone=0
+ClickRaise=true
+DelayFocusInterval=300
+FocusPolicy=ClickToFocus
+FocusStealingPreventionLevel=1
+GeometryTip=false
+HideUtilityWindowsForInactive=true
+InactiveTabsSkipTaskbar=false
+MaximizeButtonLeftClickCommand=Maximize
+MaximizeButtonMiddleClickCommand=Maximize (vertical only)
+MaximizeButtonRightClickCommand=Maximize (horizontal only)
+NextFocusPrefersMouse=false
+Placement=Smart
+RollOverDesktops=true
+SeparateScreenFocus=false
+ShadeHover=false
+ShadeHoverInterval=250
+SnapOnlyWhenOverlapping=false
+TitlebarDoubleClickCommand=Maximize
+WindowSnapZone=0
+
+[org.kde.kdecoration2]
+BorderSize=Tiny
+ButtonsOnLeft=MS
+ButtonsOnRight=HIAX
+CloseOnDoubleClickOnMenu=false
+library=org.kde.breeze

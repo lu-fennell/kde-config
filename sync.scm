@@ -3,10 +3,18 @@
 
 ;; Configuration
 (define files-to-sync
-  '("khotkeysrc"
-    "kglobalshortcutsrc"
+  '(
+    "dolphinrc"
     "kdeglobals"
-    "dolphinrc"))
+    "kglobalshortcutsrc"
+    "khotkeysrc"
+    "konsolerc"
+    "kwinrc"
+    "kwinrulesrc"
+    "mimeapps.list"
+    "plasmarc"
+    "touchpadrc"
+    ))
 
 ;; The directory of the repository. 
 (define repo-dir (make-parameter (getcwd)))
