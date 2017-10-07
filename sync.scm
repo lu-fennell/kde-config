@@ -1,5 +1,12 @@
 (use-modules (ice-9 match)
-             (ice-9 popen))
+             (ice-9 popen)
+	     (ice-9 getopt-long))
+
+;; options
+(define options
+  (getopt-long (command-line) 
+               '((sync-to-repo (value #f))
+                 (sync-to-config (value #f)))))
 
 ;; Configuration
 (define files-to-sync
@@ -66,4 +73,13 @@
      (system* "cp" "-v" config-file repo-file)))
    (different-files)))
 
-(sync-config->repo)
+(when (and (option-ref options 'sync-to-repo #f)
+     (option-ref options 'sync-to-config #f)
+     )
+    (error "Only one command allowed, --sync-to-repo OR --sync-to-config"))
+
+(when (option-ref options 'sync-to-repo #f)
+  (sync-config->repo))
+
+(when (option-ref options 'sync-to-config #f)
+  (error "sync-to-config not implemented yet"))
