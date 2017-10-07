@@ -8,6 +8,7 @@
     "kdeglobals"
     "kglobalshortcutsrc"
     "khotkeysrc"
+    "klipperrc"
     "konsolerc"
     "kwinrc"
     "kwinrulesrc"
@@ -64,3 +65,5 @@
     ((repo-file config-file)
      (system* "cp" "-v" config-file repo-file)))
    (different-files)))
+
+(sync-config->repo)
