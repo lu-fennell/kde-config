@@ -1,0 +1,17 @@
+[ActionsWidget]
+ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAV4AAAACAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAA+gAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AA=
+
+[ConfigDialog]
+Height 900=494
+Width 1600=628
+
+[General]
+AutoStart=true
+KeepClipboardContents=false
+MaxClipItems=100
+Number of Actions=0
+PreventEmptyClipboard=false
+Version=5.8.7
+
+[Notification Messages]
+really_clear_history=true

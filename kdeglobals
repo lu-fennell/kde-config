@@ -131,7 +131,6 @@ DirSelectDialog Size=640,480
 History Items[$e]=file:$HOME/Audio Books & Podcasts/Christopher Paolini - Eragon,file:$HOME/Music,file:$HOME/Audio Books & Podcasts
 
 [General]
-BrowserApplication[$e]=!/run/current-system/sw/bin/firefox
 ColorScheme=Breeze
 Name=Breeze
 TerminalApplication[$e]=konsole
@@ -152,7 +151,7 @@ widgetStyle=breeze
 
 [KFileDialog Settings]
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
@@ -165,7 +164,7 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
-Speedbar Width=173
+Speedbar Width=178
 View Style=Simple
 listViewIconSize=0
 

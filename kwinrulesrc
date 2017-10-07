@@ -10,15 +10,6 @@ wmclass=thunderbird
 wmclasscomplete=false
 wmclassmatch=1
 
-[2]
-Description=Show "Dolphin Scratchpad" on all Desktops
-desktop=-1
-desktoprule=2
-title=fennell — Dolphin
-titlematch=0
-wmclass=dolphin-scratchpad dolphin
-wmclasscomplete=true
-wmclassmatch=1
 
 [General]
-count=2
+count=1

@@ -2,7 +2,7 @@
 DefaultProfile=zsh dark.profile
 
 [Favorite Profiles]
-Favorites=
+Favorites=zsh dark.profile
 
 [MainWindow]
 Height 900=551
